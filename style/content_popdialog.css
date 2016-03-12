@@ -1,0 +1,36 @@
+ .pop-box {   
+    z-index: 9999; /*这个数值要足够大，才能够显示在最上层*/  
+    margin-bottom: 3px;   
+    display: none;   
+    position: absolute;   
+    background: #FFF;   
+    border:solid 1px #6e8bde;   
+}   
+
+.pop-box h4 {    
+    cursor:default;   
+    height: 18px;   
+    font-size: 14px;   
+    font-weight:bold;   
+    text-align: left;   
+    padding-left: 8px;   
+    padding-top: 4px;   
+    padding-bottom: 2px;   
+    /*background: url("../images/header_bg.gif") repeat-x 0 0; */  
+}   
+
+.pop-box-body {   
+    clear: both;   
+    margin: 4px;   
+    padding: 2px;   
+} 
+
+
+.mask {   
+    color:#ccccdd;
+    background-color:#ccccdd;
+    position:absolute;
+    top:0px;
+    left:0px;
+    opacity: 0.8;
+} 

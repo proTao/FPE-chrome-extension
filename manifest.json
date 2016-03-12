@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "我的加密",
+    "version": "1.0",
+    "icons": {
+        "16": "image/icon.png"
+    },
+    "browser_action": {
+        "default_icon": "image/icon.png",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "css": ["style/content_popdialog.css"],
+        "js": ["script/jquery-1.12.0.js","script/content.js"]
+    }],
+    "background": {
+        "scripts": ["script/mytools.js","script/myAES.js","script/FPE.js","script/background.js"],
+        "persistent": false
+    },
+    "permissions": ["tabs", "<all_urls>"]
+}
